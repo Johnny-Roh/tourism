@@ -23,4 +23,4 @@ if response.status_code == 200:
     else:
         st.write("폴더가 비어 있습니다.")
 else:
-    st.write("폴더를 가져오는 데 실패했습니다.")
+    st.write("폴더를 가져오는 데 실패했습니다. 눈물나")
