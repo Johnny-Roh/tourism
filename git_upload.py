@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import base64
 
-GITHUB_REPO = st.secrets["Johnny-Roh/repo"]  # "username/repo" 형태
+GITHUB_REPO = st.secrets["repo"]  # "username/repo" 형태
 GITHUB_TOKEN = st.secrets["git_token"]
 BRANCH = "main"  # "master"일 수도 있으니 꼭 확인!
 
