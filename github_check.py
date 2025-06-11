@@ -19,7 +19,7 @@ headers = {
 response = requests.get(url, headers=headers)
 
 # Streamlit 앱
-st.title("과제 제출 확인")
+st.title("과제 제출 확인(하뚜하뚜)")
 
 if response.status_code == 200:
     files = response.json()
@@ -27,7 +27,7 @@ if response.status_code == 200:
         for file in files:
             st.write(file['name'])
     else:
-        st.write("폴더가 비어 있습니다.")
+        st.write("폴더가 텅텅후루후루 비어 있습니다.")
 else:
-    st.write(f"폴더를 가져오는 데 실패했습니다. 상태코드: {response.status_code}")
+    st.write(f"폴더를 가져오는 데 실패했어용 ㅠㅠ. 상태코드: {response.status_code}")
     st.write(response.json())
